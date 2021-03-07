@@ -35,7 +35,7 @@ p {
 /* Links */
 
 a {
-  color: #1abc9c;
+  color: #fd9725;
   word-wrap: break-word;
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -72,6 +72,26 @@ hr {
 /*---------------------------------------------------
 3.1 Topbar
 ---------------------------------------------------*/
+header {
+  background: url(../img/header.jpeg) no-repeat cover top;
+  /* display: flex; */
+  background-attachment: relative;
+  background-position: center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#row-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 #section-topbar {
   position: fixed;
@@ -88,9 +108,10 @@ hr {
 }
 
 #topbar-inner {
-  background: #111;
+  background: transparent;
   line-height: 0;
   text-align: center;
+  transition: 0.2s;
 }
 
 /*
@@ -98,13 +119,22 @@ Top Bar
 
 By default, top navigation bar uses "fixed" position
 */
+#log{
+  transition: 0.2s;
+}
+
+.logo,
+.dropdown {
+  width: 100%;
+  transition: 0.2s;
+}
 
 #section-topbar ul#nav {
-  display: inline-block;
-  position: relative;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  border-right: 1px solid #222;
   /* For IE, the outcast */
   zoom: 1;
   *display: inline;
@@ -121,28 +151,24 @@ By default, top navigation bar uses "fixed" position
   font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   padding: 18px 20px 18px 20px;
-  border-left: 1px solid #222;
 }
 
 #section-topbar ul#nav a:focus {
-  background: #111;
+  background: #4a6572;
   text-decoration: none;
-  border-left: 1px solid #111;
 }
 
 #section-topbar ul#nav a:hover {
-  background: #222;
+  background: #4a6572;
   text-decoration: none;
-  border-left: 1px solid #111;
 }
 
 #section-topbar ul#nav .active a {
-  background: #44bbaa;
-  border-left: 1px solid #111;
+  background: #344955;
 }
 
 #section-topbar ul#nav .active a:hover {
-  background: #44bbaa;
+  background: #344955;
 }
 
 #section-topbar i {
@@ -156,22 +182,11 @@ SECTION WRAPS
 /* Header Wrap */
 
 #headerwrap {
-  background: url(../img/header.jpeg) no-repeat center top;
-  margin-top: 60px;
+  margin-top: 400px;
   padding-top: 140px;
   text-align: center;
-  background-attachment: relative;
-  background-position: center center;
   min-height: 500px;
   width: 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 #headerwrap h1 {

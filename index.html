@@ -28,50 +28,56 @@
 
 <body data-spy="scroll" data-offset="64" data-target="#section-topbar">
 
-    <div id="section-topbar">
-        <div id="topbar-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="dropdown">
-                        <ul id="nav" class="nav">
-                            <li class="menu-item"><a class="smothscroll" href="#about" title="About"><i
-                                        class="fa fa-user"></i></a></li>
-                            <li class="menu-item"><a class="smothscroll" href="#resume" title="Resume"><i
-                                        class="fa fa-file-text-o"></i></a></li>
-                            <li class="menu-item"><a class="smothscroll" href="#work" title="Works"><i
-                                        class="fa fa-briefcase"></i></a></li>
-                            <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact"><i
-                                        class="fa fa-envelope"></i></a></li>
-                        </ul>
-                        <!--/ uL#nav -->
-                    </div>
-                    <!-- /.dropdown -->
+    <header>
+        <div id="section-topbar">
+            <div id="topbar-inner">
+                <div class="container" style="transition: 0.2s;">
+                    <div id="row-header" class="row ">
+                        <div class="logo">
+                            <img id="logo" src="img/LogoMakr-04bDU1.png" alt="Logo">
+                            <!--/ uL#nav -->
+                        </div>
+                        <div class="dropdown">
+                            <ul id="nav" class="nav">
+                                <li class="menu-item"><a class="smothscroll" href="#about" title="About">About
+                                <li class="menu-item"><a class="smothscroll" href="#resume" title="Resume">Resume</a>
+                                </li>
+                                <li class="menu-item"><a class="smothscroll" href="#work" title="Works">Works</a></li>
+                                <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact">Contact</a>
+                                </li>
+                            </ul>
+                            <!--/ uL#nav -->
+                        </div>
+                        <!-- /.dropdown -->
 
-                    <div class="clear"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!--/.container -->
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!--/ #topbar-inner -->
+        <div id="headerwrap">
+            <div class="container">
+                <div class="row centered">
+                    <div class="col-lg-12">
+                        <h1>Javier Lopez Ramos</h1>
+                        <h3>Software Engineer | javierlr.dev@gmail.com</h3>
+                    </div>
+                    <!--/.col-lg-12 -->
                 </div>
                 <!--/.row -->
             </div>
             <!--/.container -->
-
-            <div class="clear"></div>
         </div>
-        <!--/ #topbar-inner -->
-    </div>
+    </header>
     <!--/ #section-topbar -->
 
-    <div id="headerwrap">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-12">
-                    <h1>Javier Lopez Ramos</h1>
-                    <h3>Software Engineer | javierlr.dev@gmail.com</h3>
-                </div>
-                <!--/.col-lg-12 -->
-            </div>
-            <!--/.row -->
-        </div>
-        <!--/.container -->
-    </div>
+
     <!--/.#headerwrap -->
 
 
@@ -402,6 +408,30 @@
             </p>
         </div>
     </div>
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("topbar-inner").style.height = "100px";
+                document.getElementById("logo").style.width = "100px";
+                document.getElementById("logo").style.display = "flex"
+                document.getElementById("topbar-inner").style.background = "#F9AA33";
+                document.getElementById("row-header").style.flexDirection = "row"
+                document.getElementById("nav").style.justifyContent = "flex-end"
+            } else {
+                document.getElementById("topbar-inner").style.height = "350px";
+                document.getElementById("topbar-inner").style.background = "";
+                document.getElementById("row-header").style.flexDirection = "column"
+                document.getElementById("nav").style.justifyContent = ""
+                document.getElementById("logo").style.width = "";
+                document.getElementById("logo").style.display = ""
+            }
+        }
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
