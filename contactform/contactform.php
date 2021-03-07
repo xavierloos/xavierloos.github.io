@@ -1,4 +1,3 @@
-
 <!-- // if (file_exists($php_mail_form_library = '../lib/php-mail-form/php-mail-form.php')) {
 //   include($php_mail_form_library);
 // } else {
@@ -31,8 +30,8 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message']; // Get Message Value
 
     $mailTo = "javierlr.dev4@gmail.com"; // You can change here your Email
-    $headers = 'From: '.$email; // Give an email id on which you want get a reply.
+    $headers = "From:  " . $email; // Give an email id on which you want get a reply.
     $txt = "You have received an email from " . $name . ".\n\n" . $message;
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.html?mailsend");
+    header("Location: ../index.html?mailsend");
 }
