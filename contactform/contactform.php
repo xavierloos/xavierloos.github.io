@@ -1,5 +1,5 @@
-<?php
-// if (file_exists($php_mail_form_library = '../lib/php-mail-form/php-mail-form.php')) {
+
+<!-- // if (file_exists($php_mail_form_library = '../lib/php-mail-form/php-mail-form.php')) {
 //   include($php_mail_form_library);
 // } else {
 //   die('Unable to load the PHP Mail Form Library!');
@@ -18,8 +18,8 @@
 // $contactform->add_message($_POST['email'], 'Email');
 // $contactform->add_message($_POST['message'], 'Message', 10);
 
-// echo $contactform->send();
-?>
+// echo $contactform->send(); -->
+
 
 
 <?php
@@ -36,5 +36,3 @@ if (isset($_POST['submit'])) {
     mail($mailTo, $subject, $txt, $headers);
     header("Location: index.html?mailsend");
 }
-
-?>
