@@ -1,6 +1,13 @@
+:root {
+  --blue600: #4a6572;
+  --blue700: #344955;
+  --blue800: #232f34;
+  --orange500: #f9aa33;
+}
+
 body {
-  background-color: #f2f2f2;
-  font-family: "Lato";
+  background-color: var(--blue800);
+  font-family: 'Michroma', sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #555;
@@ -16,9 +23,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway";
+  font-family: 'Michroma', sans-serif;
   font-weight: 300;
-  color: #333;
+  color: white;
 }
 
 /* Paragraph & Typographic */
@@ -73,9 +80,10 @@ hr {
 3.1 Topbar
 ---------------------------------------------------*/
 header {
-  background: url(../img/header.jpeg) no-repeat cover top;
+  background-color: #232f34;
+  /* background: url(../img/header.jpeg) no-repeat cover top;
   /* display: flex; */
-  background-attachment: relative;
+  /* background-attachment: relative;
   background-position: center center;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -84,7 +92,7 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;  */
 }
 
 #row-header {
@@ -100,11 +108,14 @@ header {
   right: 0;
   z-index: 10000;
   overflow: visible;
-  font: normal 16px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Michroma', sans-serif;
 }
 
 #section-topbar a {
   color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.5px black;
 }
 
 #topbar-inner {
@@ -119,7 +130,7 @@ Top Bar
 
 By default, top navigation bar uses "fixed" position
 */
-#log{
+#log {
   transition: 0.2s;
 }
 
@@ -148,7 +159,7 @@ By default, top navigation bar uses "fixed" position
 
 #section-topbar ul#nav a {
   display: block;
-  font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Michroma', sans-serif;
   text-decoration: none;
   padding: 18px 20px 18px 20px;
 }
@@ -202,7 +213,7 @@ SECTION WRAPS
 /* Intnro Wrap */
 
 #intro {
-  background: #2c3e50;
+  background: var(--blue700);
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
@@ -280,11 +291,11 @@ p {
 }
 
 .desc p {
-  color: #2f2f2f;
+  color: white
 }
 
 .desc t {
-  color: #34495e;
+  color: white;
   font-weight: 700;
 }
 
@@ -295,7 +306,7 @@ p {
 }
 
 .desc more {
-  color: #95a5a6;
+  color: white;
 }
 
 sm {
