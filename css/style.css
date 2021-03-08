@@ -185,6 +185,10 @@ By default, top navigation bar uses "fixed" position
 #section-topbar i {
   font-size: 25px;
 }
+section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 /*---------------------------------------------------
 SECTION WRAPS
@@ -212,19 +216,19 @@ SECTION WRAPS
 
 /* Intnro Wrap */
 
-#intro {
+.content {
   background: var(--blue700);
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
 }
 
-#intro h5,
+.content h5,
 p {
   color: white;
 }
 
-#intro i {
+.content i {
   color: white;
   font-size: 20px;
   padding-right: 8px;
@@ -232,7 +236,6 @@ p {
 }
 
 #skillswrap {
-  background: #2c3e50;
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
@@ -244,7 +247,7 @@ p {
 }
 
 #footwrap {
-  background: #2f2f2f;
+  background: var(--blue800);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -314,7 +317,9 @@ sm {
 }
 
 /* Contact Form */
-
+#contact{
+  background-color: var(--blue800);
+}
 .contact-form label {
   color: #999;
 }
