@@ -303,25 +303,25 @@ p {
   color: #f9aa34;
 }
 
-#footwrap {
+#contactwrap {
   background: var(--blue800);
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-#footwrap p {
+#contactwrap p {
   color: white;
 }
 
-#footwrap h5 {
+#contactwrap h5 {
   color: white;
 }
 
-#footwrap t {
+#contactwrap t {
   font-weight: 700;
 }
 
-#footwrap i {
+#contactwrap i {
   padding-right: 8px;
   color: #1abc9c;
 }
@@ -374,7 +374,7 @@ sm {
 }
 
 /* Contact Form */
-#contact {
+#contactwrap {
   background-color: var(--blue800);
 }
 
