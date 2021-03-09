@@ -323,7 +323,11 @@ p {
 
 #contactwrap i {
   padding-right: 8px;
-  color: #1abc9c;
+  font-size: 30px;
+  color: var(--orange500);
+}
+#contactwrap i:hover {
+  color: var(--blue600);
 }
 
 /* Copyright Wrap */
