@@ -10,7 +10,7 @@ body {
   font-family: 'Michroma', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #555;
+  color: #f9aa34;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
@@ -26,6 +26,11 @@ h6 {
   font-family: 'Michroma', sans-serif;
   font-weight: 300;
   color: white;
+}
+
+h4 {
+  border: 2px solid #f9aa34;
+  padding: 1em;
 }
 
 /* Paragraph & Typographic */
@@ -185,7 +190,8 @@ By default, top navigation bar uses "fixed" position
 #section-topbar i {
   font-size: 25px;
 }
-section{
+
+section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -244,6 +250,11 @@ p {
 #skillswrap h5,
 p {
   color: white;
+}
+
+.icon {
+  font-size: 60px;
+  color: #f9aa34;
 }
 
 #footwrap {
@@ -317,9 +328,10 @@ sm {
 }
 
 /* Contact Form */
-#contact{
+#contact {
   background-color: var(--blue800);
 }
+
 .contact-form label {
   color: #999;
 }
