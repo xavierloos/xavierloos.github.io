@@ -206,6 +206,8 @@ By default, top navigation bar uses "fixed" position
 .button {
   position: relative;
   top: -30px;
+  display: flex;
+  justify-content: center;
 }
 
 #card-button {
@@ -347,6 +349,18 @@ p {
 #skillswrap h5,
 p {
   color: white;
+}
+
+.projects,
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects>div,
+.skills>div {
+  margin: 2em auto;
 }
 
 .icon {
