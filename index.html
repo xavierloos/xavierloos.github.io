@@ -29,19 +29,21 @@
 </head>
 
 <body data-spy="scroll" data-offset="64" data-target="#section-topbar">
+    <div id="top"></div>
     <div id="section-topbar">
         <div id="topbar-inner">
             <div class="container" style="transition: 0.2s;">
                 <div id="row-header" class="row ">
                     <div class="logo">
+                        <a href="#top">
                         <img id="logo" src="img/LogoMakr-04bDU1.png" alt="Logo">
+                        </a>
                         <!--/ uL#nav -->
                     </div>
                     <div class="dropdown">
                         <ul id="nav" class="nav">
                             <li class="menu-item"><a class="smothscroll" href="#about" title="About">About
-                            <li class="menu-item"><a class="smothscroll" href="#education"
-                                    title="Education">Education</a>
+                            <li class="menu-item"><a class="smothscroll" href="#education" title="Education">Education</a>
                             </li>
                             <li class="menu-item"><a class="smothscroll" href="#work" title="Works">Works</a></li>
                             <li class="menu-item"><a class="smothscroll" href="#skills" title="Works">Skills</a></li>
@@ -542,20 +544,30 @@
         };
 
         function scrollFunction() {
+            navlinks=document.getElementsByClassName('smothscroll')
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById("topbar-inner").style.height = "100px";
                 document.getElementById("logo").style.width = "100px";
                 document.getElementById("logo").style.display = "flex"
                 document.getElementById("topbar-inner").style.background = "#F9AA33";
-                document.getElementById("row-header").style.flexDirection = "row"
-                document.getElementById("nav").style.justifyContent = "flex-end"
+                document.getElementById("row-header").style.flexDirection = "row";
+                document.getElementById("nav").style.justifyContent = "flex-end";
+                
+                for (i = 0; i < navlinks.length; i++) {
+                    navlinks[i].style.color="black"
+                }
+
             } else {
                 document.getElementById("topbar-inner").style.height = "350px";
                 document.getElementById("topbar-inner").style.background = "";
                 document.getElementById("row-header").style.flexDirection = "column"
-                document.getElementById("nav").style.justifyContent = ""
+                document.getElementById("nav").style.justifyContent = "";
                 document.getElementById("logo").style.width = "";
-                document.getElementById("logo").style.display = ""
+                document.getElementById("logo").style.display = "";
+                document.getElementsByClassName('smothscroll')[0].style.color="red"
+                for (i = 0; i < navlinks.length; i++) {
+                    navlinks[i].style.color="white"
+                }
             }
         }
     </script>

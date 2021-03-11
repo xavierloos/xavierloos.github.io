@@ -121,11 +121,10 @@ header {
   font-family: 'Michroma', sans-serif;
 }
 
+
 #section-topbar a {
-  color: #fff;
   font-size: 18px;
-  font-weight: bolder;
-  -webkit-text-stroke: 0.5px black;
+  font-weight: bold;
 }
 
 #topbar-inner {
@@ -175,6 +174,7 @@ By default, top navigation bar uses "fixed" position
 }
 
 #section-topbar ul#nav a {
+  color: white;
   display: block;
   font-family: 'Michroma', sans-serif;
   text-decoration: none;
@@ -192,11 +192,13 @@ By default, top navigation bar uses "fixed" position
 }
 
 #section-topbar ul#nav .active a {
+  color: white !important;
   background: var(--blue700);
 }
 
 #section-topbar ul#nav .active a:hover {
   background: var(--blue700);
+  color: white !important;
 }
 
 #section-topbar i {
