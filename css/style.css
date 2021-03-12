@@ -279,6 +279,7 @@ section {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   height: 250px;
+  width: 100%;
 }
 
 .details {
