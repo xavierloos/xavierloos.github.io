@@ -38,37 +38,40 @@
         <div id="topbar-inner">
             <div class="container" style="transition: 0.2s;">
                 <div id="row-header" class="row ">
-                    <div class="logo">
-                        <a href="#top">
-                        <img id="logo" src="img/LogoMakr-04bDU1.png" alt="Logo">
-                        </a>
-                        <!--/ uL#nav -->
+                    <div style="display: contents;">
+                        <div class="logo">
+                            <a href="#top">
+                            <img id="logo" src="img/LogoMakr-04bDU1.png" alt="Logo">
+                            </a>
+                            <!--/ uL#nav -->
+                        </div>
+                        <div id="menu" class="dropdown">
+                            <ul id="nav" class="nav">
+                                <li class="menu-item"><a class="smothscroll" href="#about" title="About">About</a></li>
+                                <li class="menu-item"><a class="smothscroll" href="#education" title="Education">Education</a></li>
+                                <li class="menu-item"><a class="smothscroll" href="#work" title="Works">Works</a></li>
+                                <li class="menu-item"><a class="smothscroll" href="#skills" title="Works">Skills</a></li>
+                                <li class="menu-item"><a class="smothscroll" href="#projects" title="Projects">Projects</a></li>
+                                <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact">Contact</a></li>
+                            </ul>
+                        </div>  
                     </div>
-                    <div class="dropdown">
+                     <div id="mobile-menu" class="dropdown">
                         <ul id="nav" class="nav">
-                            <li class="menu-item"><a class="smothscroll" href="#about" title="About">About
-                            <li class="menu-item"><a class="smothscroll" href="#education" title="Education">Education</a>
-                            </li>
-                            <li class="menu-item"><a class="smothscroll" href="#work" title="Works">Works</a></li>
-                            <li class="menu-item"><a class="smothscroll" href="#skills" title="Works">Skills</a></li>
-                            <li class="menu-item"><a class="smothscroll" href="#projects" title="Projects">Projects</a>
-                            </li>
-                            <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact">Contact</a>
-                            </li>
+                            <li class="menu-item"><a class="smothscroll" href="#about" title="About"><i class="fas fa-user"></i></a></li>
+                            <li class="menu-item"><a class="smothscroll" href="#education" title="Education"><i class="fas fa-graduation-cap"></i></a></li>
+                            <li class="menu-item"><a class="smothscroll" href="#work" title="Works"><i class="fas fa-briefcase"></i></a></li>
+                            <li class="menu-item"><a class="smothscroll" href="#skills" title="Works"><i class="fas fa-medal"></i></a></li>
+                            <li class="menu-item"><a class="smothscroll" href="#projects" title="Projects"><i class="fas fa-book"></i></a></li>
+                            <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact"><i class="fas fa-address-card"></i></a></li>
                         </ul>
                         <!--/ uL#nav -->
                     </div>
-                    <!-- /.dropdown -->
-
-                    <div class="clear"></div>
                 </div>
-                <!--/.row -->
             </div>
-            <!--/.container -->
-
-            <div class="clear"></div>
         </div>
     </div>
+    
     <!--/ #topbar-inner -->
     <div id="headerwrap">
         <div class="container">
@@ -410,7 +413,7 @@
                 </div>
             </div>
             <div class="row slideanim contact">
-                <div class="col-sm-4 col-xs-6 button">
+                <div class="col-4 col-md-4 col-sm-5 col-xs-10 button">
                     <div id="card-button">
                         <div class="icon-button">
                             <i class="fab fa-github-alt"></i>
@@ -446,7 +449,7 @@
                 <br>
                 <br>
                 <div class="row slideanim contact">
-                    <div class="col-sm-4 col-xs-6 button">
+                    <div class="col-4 col-md-4 col-sm-5 col-xs-10 button">
                         <div id="card-button">
                             <div class="icon-button">
                                 <i class="fas fa-envelope"></i>
@@ -454,7 +457,7 @@
                             <a href="mailto:javierlr.dev@gmail.com" class="yellow-button">SEND AN EMAIL</a>
                         </div>
                     </div>
-                    <div class="col-sm-4 col-xs-6 button">
+                    <div class="col-4 col-md-4 col-sm-5 col-xs-10 button">
                         <div id="card-button">
                             <div class="icon-button">
                                 <i class="fas fa-phone-alt"></i>
@@ -462,7 +465,7 @@
                             <a href="tel:+4407578084984" class="yellow-button">CALL TO PHONE</a>
                         </div>
                     </div>
-                    <div class="col-sm-4 col-xs-6 button">
+                    <div class="col-4 col-md-4 col-sm-5 col-xs-10 button">
                         <div id="card-button">
                             <div class="icon-button">
                                 <i class="fab fa-linkedin-in"></i>
@@ -470,7 +473,7 @@
                             <a href="https://www.linkedin.com/in/xavierloos" class="yellow-button">CONNECT LINKEDIN</a>
                         </div>
                     </div>
-                    <div class="col-sm-4 col-xs-6 button">
+                    <div class="col-4 col-md-4 col-sm-5 col-xs-10 button">
                         <div id="card-button">
                             <div class="icon-button">
                                 <i class="fab fa-github-alt"></i>
@@ -539,40 +542,6 @@
             </p>
         </div>
     </footer>
-    <script>
-        // When the user scrolls down 50px from the top of the document, resize the header's font size
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            navlinks=document.getElementsByClassName('smothscroll')
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("topbar-inner").style.height = "100px";
-                document.getElementById("logo").style.width = "100px";
-                document.getElementById("logo").style.display = "flex"
-                document.getElementById("topbar-inner").style.background = "#F9AA33";
-                document.getElementById("row-header").style.flexDirection = "row";
-                document.getElementById("nav").style.justifyContent = "flex-end";
-                
-                for (i = 0; i < navlinks.length; i++) {
-                    navlinks[i].style.color="black"
-                }
-
-            } else {
-                document.getElementById("topbar-inner").style.height = "350px";
-                document.getElementById("topbar-inner").style.background = "";
-                document.getElementById("row-header").style.flexDirection = "column"
-                document.getElementById("nav").style.justifyContent = "";
-                document.getElementById("logo").style.width = "";
-                document.getElementById("logo").style.display = "";
-                document.getElementsByClassName('smothscroll')[0].style.color="red"
-                for (i = 0; i < navlinks.length; i++) {
-                    navlinks[i].style.color="white"
-                }
-            }
-        }
-    </script>
 
     <!-- JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
@@ -584,6 +553,7 @@
     <!-- Template Main Javascript File -->
     <script src="js/smoth_scroll.js"></script>
     <script src="js/intro.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

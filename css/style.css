@@ -205,6 +205,19 @@ By default, top navigation bar uses "fixed" position
   font-size: 25px;
 }
 
+#mobile-menu {
+  background: #f9aa33;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: black;
+  display: none;
+}
+
+#mobile-menu ul#nav>li {
+  width: 100%;
+}
+
 .button {
   position: relative;
   top: -30px;
@@ -558,4 +571,19 @@ sm {
   padding: 15px;
   font-weight: 600;
   margin: 15px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  #headerwrap {
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+
+  #section-topbar ul#nav a {
+    color: black;
+  }
+
+  #copyrights {
+    margin-bottom: 50px;
+  }
 }

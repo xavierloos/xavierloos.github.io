@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+  // if ($(window).width() < 992) {
+  //   document.getElementById("menu").style.display = "none"
+  // } else {
+  //   document.getElementById("menu").style.display = "block"
+  // }
   // array with texts to type in spell
   var h1_intro = [
     "👋 Hello, I`m Javier Lopez Ramos",
