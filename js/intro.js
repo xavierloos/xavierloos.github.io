@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // }
   // array with texts to type in spell
   var h1_intro = [
-    "👋 Hello, I`m Javier Lopez Ramos",
+    "👋 Hello, I'm Javier Lopez Ramos",
     "🤝 Call me Javi",
-    "💻 A software engineer",
-    "👍 Get to know me!"
+    "💻 I'm software engineer",
+    "👍 Scrolldown and get to know me!"
   ];
   // type one text in the typwriter
   // keeps calling itself until the text is finished
