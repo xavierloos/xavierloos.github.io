@@ -161,6 +161,26 @@ By default, top navigation bar uses "fixed" position
   transition: 0.2s;
 }
 
+.certification-cards {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.certification-cards>div {
+  margin: 2em auto;
+}
+
+.certification-cards>div>a {
+  color: white;
+}
+
+.certification-cards>div>a:hover {
+  color: var(--blue600);
+}
+
+.certification {
+  width: 100px;
+}
 
 #section-topbar ul#nav {
   transition: 0.2s;
