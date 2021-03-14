@@ -38,6 +38,12 @@ li {
   color: var(--orange500);
 }
 
+li>a {
+  color: var(--orange500);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 /* Paragraph & Typographic */
 
 p {
