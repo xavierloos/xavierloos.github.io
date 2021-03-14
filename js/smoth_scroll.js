@@ -6,15 +6,15 @@ jQuery(document).ready(($) => {
     e.preventDefault();
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      var screenwidth
+      var offset_topvalue
       if ($(window).width() < 960) {
-        screenwidth = 0
+        offset_topvalue = 0
       } else {
-        screenwidth = 62
+        offset_topvalue = 62
       }
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top - screenwidth
+          scrollTop: target.offset().top - offset_topvalue
         }, 1500, 'easeInOutExpo');
       }
     }
