@@ -356,7 +356,8 @@ p {
   vertical-align: middle;
 }
 
-#skillswrap {
+#skillswrap,
+#projectswrap {
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
