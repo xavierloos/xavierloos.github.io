@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   var h1_intro = [
     "👋 Hello, I'm Javier Lopez Ramos",
     "🤝 Call me Javi",
-    "💻 I'm software engineer",
-    "👍 Scrolldown and get to know me!"
+    "💻 I'm a software engineer",
+    "👍 Scroll down and get to know me!"
   ];
   // type one text in the typwriter
   // keeps calling itself until the text is finished
