@@ -589,3 +589,15 @@ sm {
     margin-bottom: 50px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #headerwrap h1 {
+    font-size: 40px;
+  }
+
+  #skillswrap h5,
+  p {
+    font-size: 14px;
+  }
+
+}
