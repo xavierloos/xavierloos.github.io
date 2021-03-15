@@ -93,23 +93,8 @@ hr {
   padding: 0;
 }
 
-/*---------------------------------------------------
-3.1 Topbar
----------------------------------------------------*/
 header {
   background-color: #232f34;
-  /* background: url(../img/header.jpeg) no-repeat cover top;
-  /* display: flex; */
-  /* background-attachment: relative;
-  background-position: center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;  */
 }
 
 #row-header {
@@ -460,30 +445,6 @@ p {
   color: #999;
 }
 
-/* Global Values */
-
-.desc {
-  padding-top: 50px;
-}
-
-.desc p {
-  color: white
-}
-
-.desc t {
-  color: white;
-  font-weight: 700;
-}
-
-.desc imp {
-  padding: 6px;
-  color: white;
-  background: #34495e;
-}
-
-.desc more {
-  color: white;
-}
 
 /* ---------------- For Animation on Scroll ---------------- */
 .slideanim {
