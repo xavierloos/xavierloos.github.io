@@ -35,7 +35,8 @@ h4 {
 }
 
 li {
-  color: var(--orange500);
+  color: white;
+  font-style: italic;
 }
 
 li>a {
@@ -182,6 +183,16 @@ By default, top navigation bar uses "fixed" position
   width: 100px;
 }
 
+p.certification-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-flow: wrap;
+  color: gray;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 #section-topbar ul#nav {
   transition: 0.2s;
   display: flex;
@@ -200,6 +211,7 @@ By default, top navigation bar uses "fixed" position
 }
 
 #section-topbar ul#nav a {
+  font-style: normal;
   color: white;
   display: block;
   font-family: 'Michroma', sans-serif;
@@ -315,6 +327,8 @@ section {
 .details>h5 {
   color: black !important;
   font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
 }
 
 .details>p {
@@ -329,12 +343,28 @@ section {
   border: 2px solid var(--blue700);
   border-radius: 5px;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .link-project:hover {
   color: #344955;
   background: #f9aa34;
   transition: 0.4s;
+}
+
+.project-lang {
+  position: absolute;
+  top: 226px;
+  right: 20px;
+}
+
+.project-lang>img {
+  width: 50px;
+  height: 45px;
+  background: white;
+  border: 2px solid orange;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 /*---------------------------------------------------
@@ -411,40 +441,6 @@ p {
   color: #f9aa34;
 }
 
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-
-#contactwrap {
-  background: var(--blue800);
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#contactwrap p {
-  color: white;
-}
-
-#contactwrap h5 {
-  color: white;
-}
-
-#contactwrap t {
-  font-weight: 700;
-}
-
-#contactwrap i {
-  padding-right: 8px;
-  font-size: 30px;
-  color: var(--orange500);
-}
-
-#contactwrap i:hover {
-  color: var(--blue600);
-}
 
 /* Copyright Wrap */
 
@@ -489,98 +485,6 @@ p {
   color: white;
 }
 
-sm {
-  font-size: 12px;
-}
-
-/* Contact Form */
-#contactwrap {
-  background-color: var(--blue800);
-}
-
-.contact-form label {
-  color: #999;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px 12px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  height: auto;
-}
-
-.contact-form .form-send {
-  text-align: center;
-}
-
-.contact-form .form-send button {
-  background: #44bbaa;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.contact-form .form-send button:hover {
-  background: #23c8b1;
-}
-
-.contact-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact-form .loading {
-  display: none;
-  color: #555;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.contact-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
 /* ---------------- For Animation on Scroll ---------------- */
 .slideanim {
   visibility: hidden;
@@ -612,27 +516,6 @@ sm {
   }
 }
 
-
-.contact-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
-
-.contact-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
-
 @media only screen and (max-width: 992px) {
   #headerwrap {
     margin-top: 200px;
@@ -660,6 +543,10 @@ sm {
   #skillswrap h5,
   p {
     font-size: 14px;
+  }
+
+  p.certification-details {
+    justify-content: center;
   }
 
 }
