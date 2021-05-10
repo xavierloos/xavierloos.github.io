@@ -427,7 +427,6 @@ p {
 .slideanim {
   visibility: hidden;
   visibility: visible\9;
-  /*For old IE browsers IE6-8 */
 }
 
 .slideanim.slide {
