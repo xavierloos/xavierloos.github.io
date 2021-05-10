@@ -121,11 +121,6 @@ header {
   transition: 0.2s;
 }
 
-/*
-Top Bar
-
-By default, top navigation bar uses "fixed" position
-*/
 #logo {
   transform: rotate(0deg);
   transition: transform .8s ease-in-out;
