@@ -435,7 +435,6 @@ p {
 }
 
 .slideanim::after {
-  /* useful when its child elements are float:left; */
   content: "";
   display: table;
   clear: both;
