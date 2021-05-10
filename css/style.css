@@ -3,7 +3,7 @@
   --blue700: #344955;
   --blue800: #232f34;
   --orange500: #f9aa33;
-  
+
 }
 
 body {
@@ -16,8 +16,6 @@ body {
   -webkit-overflow-scrolling: touch;
   word-spacing: 5px;
 }
-
-/* Titles */
 
 h1,
 h2,
