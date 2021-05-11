@@ -218,7 +218,7 @@ p.certification-details {
 }
 
 #mobile-menu {
-  background: #f9aa33;
+  background: var(--orange500);
   position: fixed;
   bottom: 0;
   left: 0;
