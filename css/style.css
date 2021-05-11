@@ -88,7 +88,7 @@ hr {
 }
 
 header {
-  background-color: #232f34;
+  background-color: var(--blue800);
 }
 
 #row-header {
