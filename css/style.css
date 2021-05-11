@@ -162,7 +162,7 @@ p.certification-details {
   flex-direction: column;
   justify-content: space-around;
   flex-flow: wrap;
-  color: gray;
+  color: #808080;
   font-size: 14px;
   font-weight: bold;
 }
