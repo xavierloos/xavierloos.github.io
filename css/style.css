@@ -306,7 +306,7 @@ section {
 }
 
 .details>p {
-  color: var(--blue700);
+  /* color: var(--blue700); */
   text-align: justify;
   font-size: 13px;
 }
